@@ -1,0 +1,32 @@
+<!--
+  Generated template for the DetailContactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>DetailContact</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="list card">
+    <h2>{{user.name.title}} {{user.name.first}} {{user.name.last}}</h2>
+    <p> Gender : {{user.gender}}</p>
+    <p> Phone : {{user.phone}}</p>
+    <p> Email : {{user.email}}</p>
+  </div>
+
+  <div class="item item-image">
+    <img [src]="user.picture.thumbnail" alt="" padding="5px"
+    weight="100px" height="100px"/>
+  </div>
+
+  <button ion-button block (click)="showAlert()">
+      Send Emel
+  </button>
+</ion-content>
